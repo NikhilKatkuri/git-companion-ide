@@ -1,93 +1,93 @@
-Here is your final **README.md code** — just copy and paste:
- 
 # 🚀 Git-Companion IDE
 
-**Lightweight GitHub + AI Companion IDE — built by Nikhil Katkuri**
+> A lightweight GitHub + AI-powered companion IDE, designed for developers who love simplicity and power — built by [Nikhil Katkuri](https://github.com/NikhilKatkuri).
 
 ---
 
-## 🎯 What is this?
+## 📌 Overview
 
-**Git-Companion IDE** is a lightweight desktop app for GitHub developers:
+**Git-Companion IDE** is a cross-platform desktop application that enhances your GitHub development workflow with an elegant interface and intelligent features.
 
-✅ View repositories  
-✅ Edit code (Monaco Editor)  
-✅ AI-powered code assistant  
-✅ Manage branches / commits / issues  
-✅ Cross-platform: Windows / Mac / Linux  
-✅ Built with Electron + Next.js + Monaco Editor
+### 🔥 Features
+
+- 📁 View & explore GitHub repositories  
+- ✍️ Edit code with Monaco Editor  
+- 🤖 AI-powered code assistance (via OpenAI)  
+- 🌿 Branch, commit, and issue management  
+- 🖥️ Custom title bar and window controls  
+- ⚡ Built with Electron + Next.js  
+- 💻 Runs on Windows, macOS, and Linux
 
 ---
 
 ## 🛠️ Tech Stack
 
-- Electron
-- Next.js (React)
-- Monaco Editor
-- Tailwind CSS
-- TypeScript
-- GitHub REST API
-- OpenAI API (AI Lab)
+| Layer             | Technologies Used                      |
+|------------------|----------------------------------------|
+| UI/Frontend       | **Next.js**, **React**, **Tailwind CSS** |
+| Desktop Shell     | **Electron**                           |
+| Code Editor       | **Monaco Editor**                      |
+| AI Assistant      | **OpenAI API**                         |
+| GitHub Integration| **GitHub REST API**                    |
+| Language          | **TypeScript**                         |
 
 ---
 
-## 💻 How to Run (Development)
+## 💻 Getting Started (Development)
 
 ```bash
-cd desktop
+# Clone the repository
+git clone https://github.com/NikhilKatkuri/git-companion-ide.git
+cd git-companion-ide/desktop
+
+# Install dependencies
 npm install
+
+# Run the app
 npm run dev
 ````
 
 ---
 
-## 📦 Folder Structure
+## 📂 Folder Structure
 
 ```bash
-/git-companion-ide
-|-- desktop
-|   |-- electron-main
-|   |-- nextjs-app
-|-- docs
-|   |-- STARTUP_DOCS.md
-|-- README.md
+git-companion-ide
+├── desktop
+│   ├── electron-main     # Main process (Electron)
+│   └── nextjs-app        # Frontend (Next.js UI)
+├── docs
+│   └── STARTUP_DOCS.md   # Project planning + architecture
+└── README.md             # You’re here!
 ```
 
 ---
 
-## 📝 Startup Docs
+## 📖 Documentation
 
-See full project plan → [STARTUP\_DOCS.md](./docs/STARTUP_DOCS.md)
+📄 See full project overview and roadmap → [`docs/STARTUP_DOCS.md`](./docs/STARTUP_DOCS.md)
 
 ---
 
-## 🧑‍💻 Author
+## 👨‍💻 Author
 
 **Nikhil Katkuri**
-GitHub: [@NikhilKatkuri](https://github.com/NikhilKatkuri)
+📌 GitHub → [@NikhilKatkuri](https://github.com/NikhilKatkuri)
 
 ---
 
 ## 📄 License
 
-MIT License
+Licensed under the **MIT License** — free for personal and commercial use.
 
 ---
 
-⭐ Star this repo if you like the project 🚀
+## 🌟 Show Your Support
 
-````
+If you like the project, consider giving it a **⭐ Star** on GitHub — it motivates me to keep building!
 
----
 
-✅ Just paste this into `/git-companion-ide/README.md`  
-✅ Then:
-
-```bash
-git add README.md
-git commit -m "Updated project README"
-git push
-````
 
 ---
 
+ 

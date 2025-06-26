@@ -5,7 +5,7 @@
   "main": "electron-main/main.js",
   "scripts": {
     "dev": "concurrently \"npm run electron\" \"npm run next\"",
-    "electron": "wait-on http://localhost:3000 && electron .",
+    "electron": "wait-on http://localhost:3000 && electron ./electron-main/main.js",
     "next": "cd nextjs-app && npm run dev",
     "build": "cd nextjs-app && npm run build",
     "start": "cd nextjs-app && npm run start"
@@ -17,11 +17,13 @@
   "devDependencies": {
     "concurrently": "^9.2.0",
     "electron": "^36.5.0",
+    "electron-reload": "^2.0.0-alpha.1",
     "wait-on": "^8.0.3"
   },
   "dependencies": {
     "next": "^15.3.4",
     "react": "^19.1.0",
-    "react-dom": "^19.1.0"
+    "react-dom": "^19.1.0",
+    "ws": "^8.18.2"
   }
 }

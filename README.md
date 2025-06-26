@@ -53,11 +53,9 @@ npm run dev
 
 ```bash
 git-companion-ide
-├── desktop
-│   ├── electron-main     # Main process (Electron)
-│   └── nextjs-app        # Frontend (Next.js UI)
-├── docs
-│   └── STARTUP_DOCS.md   # Project planning + architecture
+├
+│── electron-main     # Main process (Electron)
+│── nextjs-app        # Frontend (Next.js UI)
 └── README.md             # You’re here!
 ```
 

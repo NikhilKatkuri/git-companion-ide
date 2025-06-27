@@ -47,3 +47,6 @@
 body {
   font-family: var(--open-sans), sans-serif; /* Add a generic fallback font */
 }
+button{
+  cursor: pointer;
+}

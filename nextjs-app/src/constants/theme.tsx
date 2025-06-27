@@ -1,43 +1,8 @@
-interface ThemeColors {
-  // General UI colors
-  background: string;
-  surface: string;
-  primary: string;
-  secondary: string;
+import { ThemeInterFace } from "@/models/themeInterface";
 
-  // Text Colors
-  text: string;
-  textMuted: string;
-  textError: string;
-  textSuccess: string;
+ 
 
-  // Border & Separators
-  borderColor: string;
-  separatorColor: string;
-
-  // Title Bar specific colors (flattened for CSS variables)
-  titleBarBackgroundStart: string;
-  titleBarBackgroundEnd: string;
-  titleBarTextColor: string; 
-  titleBarButtonHoverBackground: string;
-  titleBarButtonActiveBackground: string;
-
-  // Other UI Elements
-  inputBackground: string;
-  inputBorder: string;
-  inputTextColor: string;
-  scrollThumb: string;
-  scrollTrack: string;
-  hoverHighlight: string;
-}
-
-interface theme {
-  name: string;
-  id: string;
-  colors: ThemeColors;
-}
-
-const themes: theme[] = [
+const ThemeData: ThemeInterFace[] = [
   {
     name: "VS Code Dark+ Modern",
     id: "vscode-dark",
@@ -53,6 +18,8 @@ const themes: theme[] = [
       textMuted: "#999999", // less important text
       textError: "#f48771", // red errors
       textSuccess: "#89d185", // green success
+      
+      iconColor:"text-stone-300",
 
       // 🔲 Borders
       borderColor: "#3c3c3c",
@@ -148,6 +115,4 @@ const themes: theme[] = [
   },
 ];
 
-const dark: theme = themes[0];
-
-export default dark;
+ export  default ThemeData

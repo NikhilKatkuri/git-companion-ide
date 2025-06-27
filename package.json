@@ -3,13 +3,17 @@
   "version": "1.0.0",
   "description": "Git-Companion IDE - Desktop App",
   "main": "electron-main/main.js",
-  "scripts": {
-    "dev": "concurrently \"npm run electron\" \"npm run next\"",
-    "electron": "wait-on http://localhost:3000 && electron ./electron-main/main.js",
-    "next": "cd nextjs-app && npm run dev",
-    "build": "cd nextjs-app && npm run build",
-    "start": "cd nextjs-app && npm run start"
-  },
+"scripts": {
+  "dev": "concurrently \"npm run electron\" \"npm run next\"",
+  "electron": "wait-on http://localhost:3000 && electron ./electron-main/main.js",
+  "electron-dev": "cross-env NODE_ENV=development electron ./electron-main/main.js",
+  "next": "cd nextjs-app && npm run dev",
+  "build": "cd nextjs-app && npm run build",
+  "export": "cd nextjs-app && npm run export",
+  "start": "electron ./electron-main/main.js",
+  "pack": "npm run export && electron-builder"
+}
+,
   "keywords": [],
   "author": "Nikhil Katkuri",
   "license": "MIT",

@@ -1,5 +1,6 @@
 import type { Metadata } from "next"; 
 import "./globals.css"; 
+import { ThemeContextProvider } from "@/context/themeContext";
 
  
  
@@ -18,7 +19,10 @@ export default function RootLayout({
       <body
         className={` antialiased`}
       >
+        <ThemeContextProvider>
+
         {children}
+        </ThemeContextProvider>
       </body>
     </html>
   );
